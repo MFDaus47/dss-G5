@@ -136,7 +136,7 @@ def calculate_staffing_needs(predictions, base_staff, traffic_to_customer_ratio=
 # ==============================
 # UI HEADER
 # ==============================
-st.title("🇲🇾 AI-Powered Traffic Forecasting DSS")
+st.title("Regression-Powered Traffic Forecasting DSS")
 st.write("""
 This system uses **machine learning ensemble models** to forecast traffic patterns 
 for the next 24 hours and recommend optimal staffing levels based on predicted customer flow.
@@ -530,5 +530,4 @@ if st.button("🔮 Generate 24-Hour Forecast", type="primary"):
 # FOOTER
 # ==============================
 st.divider()
-st.caption("🤖 Powered by ML Ensemble (LR + RF + GB) | 📊 Traffic-Aware Staffing DSS v2.1")
 st.caption(f"Model trained on {meta.get('dataset_samples', 'N/A')} samples | Last updated: {datetime.now().strftime('%Y-%m-%d')}")
